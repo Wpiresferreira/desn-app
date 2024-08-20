@@ -30,8 +30,8 @@ export default function Home() {
   }
   return (
     <>
-      <div className="flex flex-wrap justify-around content-around h-[46vh] rounded-2xl bg-color50">
-        <div className="flex flex-wrap justify-around content-around h-[44vh] rounded-2xl">
+      <div className="max-w-[430px]  flex flex-wrap justify-around content-around min-h-[46vh] rounded-2xl bg-color50">
+        <div className=" max-w-[430px] flex flex-wrap justify-around content-around min-h-[44vh] rounded-2xl">
           <BoxWeather />
           <BoxTickets />
           <BoxTransit />

@@ -87,7 +87,7 @@ export default function BoxWeather() {
   if (!data) return <p>No profile data</p>;
 
   return (
-    <div className="flex flex-col justify-center items-center w-[45vw] rounded-xl bg-color3 h-[40vw] text-color5">
+    <div className="w-[45vw] max-w-[194px] h-[40vw] max-h-[194px] m-[1vh] flex flex-col justify-center items-center rounded-xl bg-color3 text-color5">
       <div className="flex items-center justify-center">
 
       <div className="h-[60px] w-[60px]">

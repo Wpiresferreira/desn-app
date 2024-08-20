@@ -13,11 +13,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="max-w-[430px] min-w-[380px]">
       <body className={`${inter.className}`}>
-        <div className=" bg-color30 h-screen">
+        <div className=" bg-color30 h-screen min-h-[720px] max-w-[430px]">
           <div
-          className="animate-up-normal"
+          className="animate-up-normal max-w-[430px]"
           >
             <Top />
           </div>

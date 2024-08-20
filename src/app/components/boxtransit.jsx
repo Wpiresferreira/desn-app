@@ -15,7 +15,7 @@ import { useEffect, useState } from "react";
 
 export default function BoxTransit() {
   return (
-    <div className="flex flex-col justify-center items-center w-[45vw] rounded-xl bg-color3 h-[40vw] text-color5">
+    <div className="w-[45vw] max-w-[194px] h-[40vw] max-h-[194px] m-[1vh] flex flex-col justify-center items-center rounded-xl bg-color3 text-color5">
     <div className='w-[70%] left-0'>
       <Image src={CarImg} width={70} height={70} alt="Car" />
       </div>

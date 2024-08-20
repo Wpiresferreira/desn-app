@@ -20,7 +20,7 @@ export default function Footer() {
 
 
   return (
-    <div className="fixed bottom-0 flex w-screen">
+    <div className="fixed bottom-0 flex w-screen max-w-[430px]">
       {links.map((link) => {
         const LinkIcon = link.icon;
         return (
