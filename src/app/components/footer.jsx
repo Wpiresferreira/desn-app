@@ -3,10 +3,9 @@ import clsx from "clsx";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHome, faHeart,  faUserCircle } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
-import { pathToFileURL } from "url";
 
 const links = [
-  { text: "Home", icon: faHome, href: "/home" },
+  { text: "Home", icon: faHome, href: "/" },
   { text: "Favorites", icon: faHeart, href: "/home/payment" },
   { text: "User", icon: faUserCircle, href: "/home/trip" },
 ];

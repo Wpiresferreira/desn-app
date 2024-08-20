@@ -7,6 +7,13 @@ import { faLocationArrow } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
 import { redirect } from "next/navigation";
 import { useState } from "react";
+import BoxWeather from "./components/boxweather";
+import BoxTickets from "./components/boxtickets";
+import BoxTransit from "./components/boxtransit";
+import BoxFeedback from "./components/boxfeedback";
+import BoxDirections from "./components/boxdirections";
+import Announcements from "./components/announcements";
+
 
 export default function Home() {
   const [wait, setWait] = useState(false);
@@ -16,15 +23,24 @@ export default function Home() {
       setWait(true);
     }, 2000);
   }
-  waitHome();
+  // waitHome();
 
   if (wait) {
     redirect("/home");
   }
   return (
-    <main>
-
-    </main>
+    <>
+      <div className="flex flex-wrap justify-around content-around h-[46vh] rounded-2xl bg-color50">
+        <div className="flex flex-wrap justify-around content-around h-[44vh] rounded-2xl">
+          <BoxWeather />
+          <BoxTickets />
+          <BoxTransit />
+          <BoxFeedback />
+        </div>
+      </div>
+        <BoxDirections/>
+        <Announcements/>
+    </>
   );
   //   <main className="flex min-h-screen flex-col items-center justify-between p-24">
   //     <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
